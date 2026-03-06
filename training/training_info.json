@@ -1,0 +1,31 @@
+{
+    "model_name": "Moose-1.0",
+    "developer": "Metaprise",
+    "parameters": "8.03B",
+    "architecture": "decoder-only transformer",
+    "training_type": "full_parameter",
+    "train_rows": 18655,
+    "test_rows": 1913,
+    "epochs": 3,
+    "learning_rate": 2e-6,
+    "effective_batch_size": 16,
+    "max_seq_len": 2048,
+    "warmup_steps": 100,
+    "weight_decay": 0.01,
+    "lr_scheduler": "cosine",
+    "precision": "bf16",
+    "hardware": "NVIDIA H100 NVL (99.9 GB VRAM)",
+    "training_time_minutes": 351,
+    "final_train_loss": 0.8828,
+    "final_eval_loss": 0.8242,
+    "license": "Apache-2.0",
+    "datasets": [
+        "01_identity (1105 rows)",
+        "02_finance (2160 rows)",
+        "03_tos (2052 rows)",
+        "04_legal_reasoning (3000 rows)",
+        "05_general_qa (11504 rows)",
+        "06_jira_confluence (349 rows)",
+        "07_project_management (398 rows)"
+    ]
+}
